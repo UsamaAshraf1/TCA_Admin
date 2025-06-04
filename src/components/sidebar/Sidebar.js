@@ -19,7 +19,8 @@ import {
   renderTrack,
   renderView,
 } from "components/scrollbar/Scrollbar";
-import { Scrollbars } from "react-custom-scrollbars-2";
+// import { Scrollbars } from "react-custom-scrollbars-2";
+import ScrollBar from "react-perfect-scrollbar";
 import PropTypes from "prop-types";
 
 // Assets
@@ -49,13 +50,13 @@ function Sidebar(props) {
         minH='100%'
         overflowX='hidden'
         boxShadow={shadow}>
-        <Scrollbars
+        <ScrollBar
           autoHide
           renderTrackVertical={renderTrack}
           renderThumbVertical={renderThumb}
           renderView={renderView}>
           <Content routes={routes} />
-        </Scrollbars>
+        </ScrollBar>
       </Box>
     </Box>
   );
@@ -100,13 +101,13 @@ export function SidebarResponsive(props) {
             _hover={{ boxShadow: "none" }}
           />
           <DrawerBody maxW='285px' px='0rem' pb='0'>
-            <Scrollbars
+            <ScrollBar
               autoHide
               renderTrackVertical={renderTrack}
               renderThumbVertical={renderThumb}
               renderView={renderView}>
               <Content routes={routes} />
-            </Scrollbars>
+            </ScrollBar>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
