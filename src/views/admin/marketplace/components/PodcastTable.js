@@ -249,11 +249,11 @@ export default function BlogsComplexTable(props) {
           fontWeight="700"
           lineHeight="100%"
         >
-          Blogs
+          Podcasts
         </Text>
         <Flex align="center">
           <Button colorScheme="teal" onClick={handleAddUser} mr="4">
-            Add New Blog
+            Add New Podcast
           </Button>
           {/* <Menu /> */}
         </Flex>
